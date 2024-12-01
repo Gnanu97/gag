@@ -1,5 +1,26 @@
-<button>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" style="width: 24px; height: 24px;">
-    <g><path d="M4,10V21h6V15h4v6h6V10L12,3Z"></path></g>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Test</title>
+</head>
+<body>
+  <!-- Direct SVG Rendering -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" style="width: 100px; height: 100px; display: block;">
+    <g>
+      <path d="M4,10V21h6V15h4v6h6V10L12,3Z"></path>
+    </g>
   </svg>
-</button>
+
+  <!-- SVG as part of a button -->
+  <button style="border: 1px solid #ccc; padding: 10px; cursor: pointer;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" style="width: 24px; height: 24px;">
+      <g>
+        <path d="M4,10V21h6V15h4v6h6V10L12,3Z"></path>
+      </g>
+    </svg>
+    Home
+  </button>
+</body>
+</html>
